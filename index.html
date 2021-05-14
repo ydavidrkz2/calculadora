@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <div id='calculator-body'>
+            <div id='display'>
+                <div id='display-numbers'><div id="n1"></div><div id="op"></div><div id="n2"></div><div id="res"></div></div>
+            </div>
+            <div>
+                            <div id="power">
+                                <div id="circle"></div>
+                                <button id='powerButtom' onclick="verificaStatus('ligado')">Turn On</button>
+                            </div>
+                            <button id='view-color' onclick=''><small>Ligue a calculadora</small></button>
+                            <button id='potencia' onclick="displayOperator('²')">x²</button>
+                            <button id='raiz' onclick="displayOperator('√')">√</button>
+                            <button id='vezes' onclick="displayOperator('x')">x</button>
+                            <button id='um' onclick="displayValue1('1')">1</button>
+                            <button id='dois' onclick="displayValue1('2')">2</button>
+                            <button id='tres' onclick="displayValue1('3')">3</button>
+                            <button id='divisao' onclick="displayOperator('/')">/</button>
+                            <button id='quatro' onclick="displayValue1('4')">4</button>
+                            <button id='cinco' onclick="displayValue1('5')">5</button>
+                            <button id='seis' onclick="displayValue1('6')">6</button>
+                            <button id='menos' onclick="displayOperator('-')">-</button>
+                            <button id='sete' onclick="displayValue1('7')">7</button>
+                            <button id='oito' onclick="displayValue1('8')">8</button>
+                            <button id='nove' onclick="displayValue1('9')">9</button>
+                            <button id='mais' onclick="displayOperator('+')">+</button>
+                            <button id='zero' onclick="displayValue1('0')">0</button>
+                            <button id='igual' onclick="operate()">=</button></div>
+                            <button id='limpar' onclick="limpar()">Limpar</button>
+           
+        </div>
+        <div id='margembottom'>
+        <p>Selecione uma cor da lista abaixo:</p>
+        <select id='listColor' value=''>
+            <option>Selecione</option>
+            <option style="color: red;">Red</option>
+            <option style="color: blue;">Blue</option>
+            <option style="color: pink;">Pink</option>
+            <option style="color: green;">Green</option>
+            <option style="color: grey;">Grey</option>
+            <option style="color: yellow;">Yellow</option>
+            <option style="color: white; background-color: black;">White</option>
+            <option style="color: black;">Black</option>
+            <option value="#964b00" style="color: #964b00;">Brown</option>
+            <option style="color: purple;">Purple</option>
+            <option style="color: salmon;">Salmon</option>
+            <option style="color: orange;">Orange</option>
+        </select><button onclick='changeColorList()'>Mudar Cor</button></div> 
+                <div id='operacao'>aqui aparece a operação</div>
+    </body>
+</html>
